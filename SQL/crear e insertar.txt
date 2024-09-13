@@ -1,0 +1,61 @@
+CREATE TABLE carrera_cristiano_copia1 (
+id INTEGER,
+club TEXT,
+temporada TEXT,
+partidos_liga INTEGER,
+goles_liga INTEGER,
+asistencias_liga INTEGER,
+partidos_copa INTEGER,
+goles_copa INTEGER,
+asistencias_copa INTEGER,
+partidos_internacional INTEGER,
+goles_internacional INTEGER,
+asistencias_internacional INTEGER,
+partidos_total INTEGER,
+goles_total INTEGER,
+asistencias_total INTEGER,
+media_goleadora REAL,
+edad INTEGER,
+PRIMARY KEY (id AUTOINCREMENT)
+);
+
+INSERT INTO carrera_cristiano_copia1 (
+club,
+temporada,
+partidos_liga,
+goles_liga,
+asistencias_liga,
+partidos_copa,
+goles_copa,
+asistencias_copa,
+partidos_internacional,
+goles_internacional,
+asistencias_internacional,
+partidos_total,
+goles_total,
+asistencias_total,
+media_goleadora,
+edad
+)
+SELECT club,
+temporada,
+partidos_liga,
+goles_liga,
+asistencias_liga,
+partidos_copa,
+goles_copa,
+asistencias_copa,
+partidos_internacional,
+goles_internacional,
+asistencias_internacional,
+partidos_total,
+goles_total,
+asistencias_total,
+media_goleadora,
+edad
+FROM carrera_cristiano
+
+
+
+
+
